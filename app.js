@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     function fetchData() {
-        fetch('https://goquotes-api.herokuapp.com/api/v1/random?count=999')
+        fetch('https://goquotes-api.herokuapp.com/api/v1/random?count=50000')
         .then(resp => resp.json())
         .then(data => renderQuotes(data.quotes))
       }
